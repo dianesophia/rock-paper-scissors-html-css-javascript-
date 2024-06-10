@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --very-dark-cyan: #003C43;
+    --light-shade-cyan: #E3FEF7;
+    --medium-shade-cyan: #77B0AA;
+    --dark-shade-cyan: #135D66;
+}
+
+body{
+    background-color: var(--very-dark-cyan);
+    text-align: center;
+    color: var(--light-shade-cyan);
+}
+
+h1{
+    margin: 15px 0 20px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: var(--light-shade-cyan); 
+    background-color: var(--medium-shade-cyan); 
+    background-image: linear-gradient(var(--dark-shade-cyan), #0F4A52); 
+    border-color: var(--dark-shade-cyan); 
+    border-width: 3px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(var(--dark-shade-cyan), var(--dark-shade-cyan)); 
+}
+
+.rules-container{
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 15px;
+    border: 5px solid var(--medium-shade-cyan);
+    background-color: var(--light-shade-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.rules-container ul{
+    list-style-type: none;
+}
+
+.rules-container p{
+    margin: 10px 0;
+}
+
+@media (min-width: 760px) {
+    .rules-container{
+        width:70%;
+    }
+}
+
+.score-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+.score{
+    font-weight: 500;
+}
+
+.results-container{
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+#winner-msg{
+    margin-top: 25px;
+}
+
+#reset-game-btn{
+    display: none;
+    margin: 20px auto;
+}
